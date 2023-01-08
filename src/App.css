@@ -39,4 +39,20 @@
 
 .web_header {
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.voting_image_section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.voting_image {
+    max-width: 50rem;
+}
+
+.vs_text {
+    margin-top: auto;
+    margin-bottom: auto;
 }
