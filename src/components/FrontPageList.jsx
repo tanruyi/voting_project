@@ -11,16 +11,14 @@ import Box from "@mui/material/Box";
 const FrontPageList = () => {
   return (
     <>
-      <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
+      <Box sx={{ width: "100%", maxWidth: 1024, bgcolor: "background.paper", align: "center" }}>
       <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ align: "center" }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            <TableCell align="right">Do Kwon</TableCell>
+            <p>vs</p>
+            <TableCell align="left">Sam Bankman-Fried</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
