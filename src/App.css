@@ -1,5 +1,13 @@
 /** @format */
 
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
 .App {
 	text-align: center;
 }
@@ -57,4 +65,8 @@
 .vs_text {
 	margin-top: auto;
 	margin-bottom: auto;
+}
+
+.character_component {
+    text-align: center;
 }
