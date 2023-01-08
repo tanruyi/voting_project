@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
       <>
-          <h1>Voting Battle</h1>
+          <h1 className="web_header">Voting Battle</h1>
     </>
   );
 }
