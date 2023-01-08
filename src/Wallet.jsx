@@ -48,7 +48,15 @@ export const Wallet = ({ children }) => {
     <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
             <WalletModalProvider>
-            <WalletMultiButton />
+            <div
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  justifyContent: "flex-end",
+                }}
+              >
+                <WalletMultiButton />
+              </div>
                 {children}
             </WalletModalProvider>
         </WalletProvider>
