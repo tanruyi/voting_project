@@ -2,12 +2,12 @@ import * as anchor from "@project-serum/anchor";
 import { Idl, AnchorProvider } from "@project-serum/anchor";
 import { Connection, PublicKey } from "@solana/web3.js";
 import { AccountUtils } from "./common";
-import { Voting } from "./data/voting";
+import { BonkVote } from "./data/voting";
 
 export class VotingClient extends AccountUtils {
   wallet: anchor.Wallet;
   provider!: anchor.Provider;
-  coinProgram!: anchor.Program<Voting>;
+  coinProgram!: anchor.Program<BonkVote>;
 
   //initialising
   constructor(
@@ -35,7 +35,7 @@ export class VotingClient extends AccountUtils {
     //instantiating program depends on the environment
     if (idl && programId) {
       //means running in prod
-      this.coinProgram = new anchor.Program<Voting>(
+      this.coinProgram = new anchor.Program<BonkVote>(
         idl as any,
         programId,
         this.provider
